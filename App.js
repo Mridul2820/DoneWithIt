@@ -7,26 +7,23 @@ import ViewImageScreen from './app/screens/ViewImageScreen';
 import WellcomeScreen from './app/screens/WellcomeScreen';
 
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import AppButton from './app/components/AppButton';
+import Card from './app/components/Card';
 
 export default function App() {
     return (
-        <WellcomeScreen />
+        <View style={styles.container}>
+            <Card 
+                title="Red Jacket For Sale"
+                subTitle="$100"
+                image={require("./app/assets/jacket.jpg")}
+            />
+        </View>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
-    },
-    box: {
-        backgroundColor: 'dodgerblue',
-        width: 100,
-        height: 100,
-        borderWidth: 10,
-        borderRadius: 50,
-        borderColor: 'royalblue'
+        padding: 20,
+        paddingTop: 60
     }
 })
