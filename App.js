@@ -11,14 +11,7 @@ import AppButton from './app/components/AppButton';
 
 export default function App() {
     return (
-        <View style={styles.container}>
-            <AppText>React Native</AppText>
-            <MaterialCommunityIcons 
-                name="email" 
-                size={60}
-            />
-            <AppButton title="Login" onPress={() => console.log('tapped')}/>
-        </View>
+        <WellcomeScreen />
     );
 }
 
