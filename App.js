@@ -7,6 +7,7 @@ import ViewImageScreen from './app/screens/ViewImageScreen';
 import WellcomeScreen from './app/screens/WellcomeScreen';
 
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import AppButton from './app/components/AppButton';
 
 export default function App() {
     return (
@@ -16,6 +17,7 @@ export default function App() {
                 name="email" 
                 size={60}
             />
+            <AppButton title="Login" onPress={() => console.log('tapped')}/>
         </View>
     );
 }
