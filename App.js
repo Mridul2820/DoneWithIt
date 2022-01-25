@@ -8,16 +8,11 @@ import WellcomeScreen from './app/screens/WellcomeScreen';
 
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Card from './app/components/Card';
+import ListingDetailScreen from './app/screens/ListingDetailScreen';
 
 export default function App() {
     return (
-        <View style={styles.container}>
-            <Card 
-                title="Red Jacket For Sale"
-                subTitle="$100"
-                image={require("./app/assets/jacket.jpg")}
-            />
-        </View>
+        <ListingDetailScreen />
     );
 }
 
