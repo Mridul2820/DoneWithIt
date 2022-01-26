@@ -12,23 +12,10 @@ import ListingDetailScreen from './app/screens/ListingDetailScreen';
 import MessageScreen from './app/screens/MessageScreen';
 import Screen from './app/components/Screen';
 import Icon from './app/components/Icon';
+import AccountScreen from './app/screens/AccountScreen';
 
 export default function App() {
     return (
-        <Screen>
-            <Icon 
-                name="email"
-                size={50}
-                backgroundColor="red"
-                iconColor="white"
-            />
-        </Screen>
+        <AccountScreen />
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        padding: 20,
-        paddingTop: 60
-    }
-})
