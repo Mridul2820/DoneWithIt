@@ -9,10 +9,11 @@ import WellcomeScreen from './app/screens/WellcomeScreen';
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Card from './app/components/Card';
 import ListingDetailScreen from './app/screens/ListingDetailScreen';
+import MessageScreen from './app/screens/MessageScreen';
 
 export default function App() {
     return (
-        <ViewImageScreen />
+        <MessageScreen />
     );
 }
 
