@@ -10,10 +10,19 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Card from './app/components/Card';
 import ListingDetailScreen from './app/screens/ListingDetailScreen';
 import MessageScreen from './app/screens/MessageScreen';
+import Screen from './app/components/Screen';
+import Icon from './app/components/Icon';
 
 export default function App() {
     return (
-        <MessageScreen />
+        <Screen>
+            <Icon 
+                name="email"
+                size={50}
+                backgroundColor="red"
+                iconColor="white"
+            />
+        </Screen>
     );
 }
 
