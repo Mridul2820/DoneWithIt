@@ -4,26 +4,23 @@ import { MaterialCommunityIcons } from '@expo/vector-icons'
 
 import colors from '../config/colors'
 import deafultStyles from '../config/styles'
-import Screen from './Screen'
 
 const AppTextInput = ({ icon, ...otherProps }) => {
     return (
-        <Screen>
-            <View style={styles.container}>
-                {icon && 
-                    <MaterialCommunityIcons 
-                        name={icon} 
-                        color={colors.medium}
-                        size={24}
-                        style={styles.icon}
-                    />
-                }
-                <TextInput 
-                    style={deafultStyles.text}
-                    {...otherProps}
+        <View style={styles.container}>
+            {icon && 
+                <MaterialCommunityIcons 
+                    name={icon} 
+                    color={colors.medium}
+                    size={24}
+                    style={styles.icon}
                 />
-            </View>
-        </Screen>
+            }
+            <TextInput 
+                style={deafultStyles.text}
+                {...otherProps}
+            />
+        </View>
     )
 }
 
